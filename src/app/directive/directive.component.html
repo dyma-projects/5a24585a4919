@@ -1,0 +1,18 @@
+<div>{{textInterpolation}}  <br><br>
+  <button (click)='setImageVisible()' >Afficher image</button><br><br>
+  <img *ngIf="status" [src]="image">
+</div>
+<br><br>
+<input [(ngModel)]="text"/>
+<br>
+<div>{{text}}</div>
+<br><br>
+<p *ngIf="status">p1</p>
+<p *ngIf="!status">p2</p>
+
+
+<br><br>
+
+<ul>
+	<li *ngFor="let text of texts">{{text}}</li>
+</ul>
